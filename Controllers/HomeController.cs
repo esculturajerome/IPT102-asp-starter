@@ -6,9 +6,9 @@ public class HomeController : Controller
     {
         var studentInfoArray = new[]
         {
-            new StudentInfoModel { Name = "John Doe", StudentId = "S001", StudentAge = "20" },
-            new StudentInfoModel { Name = "Jane Smith", StudentId = "S002", StudentAge = "22" },
-            new StudentInfoModel { Name = "Mike Johnson", StudentId = "S003", StudentAge = "31" }
+            new StudentInfoModel { Name = "Jhustine Bonso", StudentId = "21-1767", StudentAge = "21" },
+            new StudentInfoModel { Name = "Willia Bonso", StudentId = "21-0989", StudentAge = "60" },
+            new StudentInfoModel { Name = "Eduardo Bonso", StudentId = "21-0990", StudentAge = "61" }
         };
 
         return View(studentInfoArray);
