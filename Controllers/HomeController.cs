@@ -1,16 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using FERRER_IPT102.Models;
+using Microsoft.AspNetCore.Mvc;
 
-public class HomeController : Controller
+namespace FERRER_IPT102.Controllers
 {
-    public IActionResult Index()
+    public class HomeController : Controller
     {
-        var studentInfoArray = new[]
+       
+        public IActionResult Index()
         {
-            new StudentInfoModel { Name = "John Doe", StudentId = "S001", StudentAge = "20" },
-            new StudentInfoModel { Name = "Jane Smith", StudentId = "S002", StudentAge = "22" },
-            new StudentInfoModel { Name = "Mike Johnson", StudentId = "S003", StudentAge = "31" }
+            var StudentInfoArray = new[]
+            {
+            new StudentInfo { StudentName = "SpongeBob Squarepants", QCUStudentID = "23-001", QCUStudentAge = "25" },
+            new StudentInfo { StudentName = "Patrick Star", QCUStudentID = "23-002", QCUStudentAge = "26" },
+            new StudentInfo { StudentName = "Jennie Kim", QCUStudentID = "23-003", QCUStudentAge = "27" },
+            new StudentInfo { StudentName = "Lalisa Manoban", QCUStudentID = "23-004", QCUStudentAge = "19" },
+            new StudentInfo { StudentName = "Jisoo Kim", QCUStudentID = "23-005", QCUStudentAge = "18" },
+            new StudentInfo { StudentName = "Roseanne Park", QCUStudentID = "23-021", QCUStudentAge = "19" },
+            new StudentInfo { StudentName = "Joy Lambingin", QCUStudentID = "23-022", QCUStudentAge = "20" },
+            new StudentInfo { StudentName = "Don Macchiatto", QCUStudentID = "23-023", QCUStudentAge = "21" },
+            new StudentInfo { StudentName = "Johnson Pawer", QCUStudentID = "23-024", QCUStudentAge = "23" },
+             new StudentInfo { StudentName = "Ico Dimagiba", QCUStudentID = "23-025", QCUStudentAge = "24" }
         };
 
-        return View(studentInfoArray);
+            return View(StudentInfoArray);
+        }
     }
 }
+
