@@ -1,36 +1,55 @@
-﻿@model StudentInfoModel[]
+@model StudentInfo[]
 <style>
-.student-table {
-    width: 100%
-}
-.student-table th {
-border: 1px solid #9c9c9c;
-padding: 8px 12px;
-background: #ffd7d7;
-}
-.student-table td {
-padding: 4px 8px;
-border: 1px solid #d6d6d6;
-}
+ 
+    .body, body{
+        background: #FFFFE0;
+    }
+  .h1, h1 {
+        color: #F8CE5B;
+        font-size:45px;
+     text-align:center;
+     line-height:75px;
+  
+  }
+    .student-tbl {
+        width: 100%;
+        background:#FACDE5;
+    }
+
+        .student-tbl th {
+            border: 1px solid #9c9c9c;
+            padding: 12px 12px;
+            background: #ED5C9B;
+            color:white;
+            text-align:center;
+        }
+
+        .student-tbl td {
+            padding: 4px 8px;
+            border: 1.5px solid #F9EBF6;
+            color: #E0218A;
+            font-family: 'Open Sans', sans-serif;
+            font-size:15px;
+        }
 </style>
 
-<h1>Sample Student Information</h1>
+<h1> QCU STUDENT INFORMATION</h1>
 
-<table border="1" class="student-table">
+<table border="1" class="student-tbl">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Student ID</th>
-            <th>Age</th>
+            <th> QCU Student Name</th>
+            <th>QCUStudentID</th>
+            <th>Student Age</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var student in Model)
+        @foreach (var QCUStudent in Model)
         {
             <tr>
-                <td>@student.Name</td>
-                <td>@student.StudentId</td>
-                <td>@student.StudentAge</td>
+                <td>@QCUStudent.StudentName</td>
+                <td>@QCUStudent.QCUStudentID</td>
+                <td>@QCUStudent.QCUStudentAge</td>
             </tr>
         }
     </tbody>
