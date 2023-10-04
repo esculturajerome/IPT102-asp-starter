@@ -19,7 +19,7 @@ namespace FERRER_IPT102.Controllers
             new StudentInfo { StudentName = "Joy Lambingin", QCUStudentID = "23-022", QCUStudentAge = "20" },
             new StudentInfo { StudentName = "Don Macchiatto", QCUStudentID = "23-023", QCUStudentAge = "21" },
             new StudentInfo { StudentName = "Johnson Pawer", QCUStudentID = "23-024", QCUStudentAge = "23" },
-             new StudentInfo { StudentName = "Ico Dimagiba", QCUStudentID = "23-025", QCUStudentAge = "24" }
+             new StudentInfo { StudentName = "Zhao Lusi", QCUStudentID = "23-025", QCUStudentAge = "24" }
         };
 
             return View(StudentInfoArray);
