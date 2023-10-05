@@ -1,20 +1,20 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v7.0",
+    "name": ".NETCoreApp,Version=v6.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v7.0": {
-      "dotnetsample/1.0.0": {
+    ".NETCoreApp,Version=v6.0": {
+      "FERRER_IPT102/1.0.0": {
         "runtime": {
-          "dotnetsample.dll": {}
+          "FERRER_IPT102.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "dotnetsample/1.0.0": {
+    "FERRER_IPT102/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

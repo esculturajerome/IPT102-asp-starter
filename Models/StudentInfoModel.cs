@@ -1,6 +1,10 @@
-public class StudentInfoModel
+namespace FERRER_IPT102.Models
 {
-    public string Name { get; set; }
-    public string StudentId { get; set; }
-    public string StudentAge { get; set; }
+    public class StudentInfo
+    {
+
+        public string StudentName { get; set; }
+        public string QCUStudentID { get; set; }
+        public string QCUStudentAge { get; set; }
+    }
 }
